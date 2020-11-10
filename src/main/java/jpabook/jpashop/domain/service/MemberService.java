@@ -24,6 +24,13 @@ public class MemberService {
         return member.getId();
     }
 
+    // 회원 수정
+    @Transactional
+    public void update(Long id, String name){
+        Member member = memberRepository.findOne(id);
+        member.setName(name);
+    }
+
     private void validateDublicateMember(Member member) {
         // EXCEPTION
         List<Member> findMembers =  memberRepository.findByName(member.getName());
