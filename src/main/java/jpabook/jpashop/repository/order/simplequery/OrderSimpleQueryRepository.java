@@ -1,4 +1,4 @@
-package jpabook.jpashop.domain.repository.order.simplequery;
+package jpabook.jpashop.repository.order.simplequery;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;

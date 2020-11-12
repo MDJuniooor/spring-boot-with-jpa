@@ -1,11 +1,11 @@
-package jpabook.jpashop.domain.api;
+package jpabook.jpashop.api;
 
 import jpabook.jpashop.domain.Address;
 import jpabook.jpashop.domain.Order;
 import jpabook.jpashop.domain.OrderStatus;
-import jpabook.jpashop.domain.repository.OrderRepository;
-import jpabook.jpashop.domain.repository.order.simplequery.OrderSimpleQueryDto;
-import jpabook.jpashop.domain.repository.order.simplequery.OrderSimpleQueryRepository;
+import jpabook.jpashop.repository.OrderRepository;
+import jpabook.jpashop.repository.order.simplequery.OrderSimpleQueryDto;
+import jpabook.jpashop.repository.order.simplequery.OrderSimpleQueryRepository;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
