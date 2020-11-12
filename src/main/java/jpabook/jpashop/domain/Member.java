@@ -22,7 +22,7 @@ public class Member {
     @Embedded
     private Address address;
 
-    @OneToMany(mappedBy = "member", fetch = LAZY)
+    @OneToMany(mappedBy = "member", fetch = LAZY, cascade = CascadeType.ALL)
     private List<Order> orders = new ArrayList<>();
 
 
